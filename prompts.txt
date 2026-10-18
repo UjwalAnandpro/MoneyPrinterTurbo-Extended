@@ -1,0 +1,153 @@
+
+# Prompt for creating youtube videos
+
+ROLE: You are an expert YouTube scriptwriter and content strategist specializing in creating engaging, tech-focused content on latest technology news for a broad audience.
+
+OBJECTIVE: Generate a complete text-based content package for a YouTube video. The goal is to select a single, highly engaging latest technology news topic and create all the necessary assets to produce the video, optimized for audience retention and YouTube's algorithm.
+
+TOPIC SELECTION CRITERIA:
+
+Trending & Relevant: The topic must have high current interest and search volume as of todays date search web in latest tech news, AI developments, futuristic gadgets, or tech breakthroughs.
+Broad Appeal: It should be relatable and exciting to a wide audience (e.g., artificial intelligence, smartphones, robotics, software innovation, smart hardware).
+Tech & Fact-Based: All information must be grounded in verified, real-world tech releases, official announcements, and credible public tech sources.
+Safe & Non-Controversial: Avoid unverified rumors or malicious exploits. The focus is on providing exciting, clear, and actionable knowledge about recent tech breakthroughs.
+
+
+REQUIRED DELIVERABLES:
+
+1. Video Title Options (3x)
+
+Goal: Create three distinct, clickable YouTube titles optimized for a high click-through rate (CTR).
+Style Example: "The New AI Breakthrough That Just Changed Everything"
+
+2. Full Video Script
+
+Length: Approximately 800-900 words, suitable for a speaking time at a natural pace (or ~60-90 seconds for shorts).
+Format: Write the script in clear, concise "single paragraph with proper punctuation".Structure it for a natural speaking rhythm, as if for a human presenter or a high-quality TTS voice.
+It should "not" have headings followed by paragraphs like Intro (0:00-0:30): or Presenter: It "should be" a single paragraph monöpuge with proper punctuations.
+
+Tone: Authoritative yet engaging, enthusiastic, and easily digestible for a general audience.
+TTS/Subtitle Optimization: End sentences and key phrases with definitive punctuation (., !, ?) to create natural breaks for Text-to-Speech (TTS) generation and automatic subtitling.
+Content Example: The world of technology just witnessed a massive breakthrough that is redefining what artificial intelligence can achieve. Rather than just recognizing patterns, the newest neural architectures are now reasoning through complex spatial logic and executing multi-step workflows autonomously!
+
+3. Pexels Video Search Keywords
+Provide a structured list of keywords and phrases for finding relevant stock footage on Pexels.com.
+Structure: Give the the keywords by the concepts in the script to ensure visual variety and relevance. The output of keywords should be in single line seperated by commas.
+Example: futuristic robot, ai artificial intelligence, computer code on screen, smartphone display, modern datacenter, drone flight, engineer working on computer, cyber technology, microchip processor
+
+
+4. YouTube Description & Hashtags
+Description: Compose an SEO-optimized summary (2-3 lines). It should concisely explain the video's value, cover the key tech topic discussed, and end with a clear call-to-action (e.g., "Subscribe for daily latest tech updates!").
+Hashtags: Provide a block of 10-15 relevant hashtags in small characters for maximum discoverability.
+Hashtags Example: #technews #latesttech #ai #technology #futuretech 
+
+
+
+
+
+
+
+### Examples prompts for videos
+
+Below are some examples of what needs to be produces follow them
+
+1. VIDEO TITLE OPTIONS (3x)
+
+"Scientists Reveal: This Sleep Mistake Is Aging Your Brain 10 Years Faster"
+"The 7-Hour Brain Rule: Why Your Sleep Schedule Controls Your Memory"
+"Harvard Scientists: Your Brain Literally Cleans Itself While You Sleep (Here's How)"
+
+2. FULL VIDEO SCRIPT (800-900 words)
+What if I told you that right now, as we speak, millions of people are unknowingly damaging their brains every single night? And the scariest part? They think they're doing everything right. New research from Yale University just revealed something shocking about sleep that's changing everything we thought we knew about brain health. Scientists discovered that getting less than seven hours of sleep, or more than nine hours, is literally causing silent brain injuries that predict stroke and dementia years before symptoms appear! But here's where it gets really interesting. Your brain doesn't just rest while you sleep. It's actually working overtime, running a cleaning system that's more sophisticated than anything we've ever imagined. Think of it like this: during the day, your brain cells are like a busy factory, producing waste products as they work. But unlike other organs, your brain doesn't have a traditional waste removal system. Instead, it has something called the glymphatic system, and it only turns on when you're in deep sleep! This system literally floods your brain with cerebrospinal fluid, washing away toxic proteins including beta-amyloid, the same protein that forms the plaques found in Alzheimer's disease. Scientists at Charité University in Berlin just discovered that during deep sleep, your brain produces slow electrical waves that strengthen the connections between neurons. These waves happen about once per second, and they're essentially tuning your brain like a musical instrument, making it more receptive to forming and storing memories. Without enough deep sleep, these waves can't do their job, and your memories literally can't stick! But wait, it gets even more mind-blowing. Remember how I mentioned that sleeping too much is also bad? Well, researchers analyzing brain scans from forty thousand people found that both sleeping less than six hours AND sleeping more than nine hours leads to brain shrinkage! Your hippocampus, the brain's memory center, actually gets smaller. The sweet spot? Seven to eight hours. Not six, not ten, but that golden range where your brain gets exactly what it needs. Now, you might be thinking, "Okay, but I feel fine on five hours of sleep!" Here's the thing: brain damage from poor sleep is silent. You won't feel it happening. By the time symptoms appear, the damage has been accumulating for decades. Scientists are calling sleep deprivation in your thirties and forties one of the strongest predictors of dementia risk later in life. So what can you actually do about this? First, consistency is king. Your brain loves routine more than anything else. Going to bed and waking up at the same time every day, yes, even on weekends, synchronizes your brain's internal cleaning schedule. Second, temperature matters more than you think. Your brain needs to cool down by about two degrees to enter deep sleep. Keep your bedroom between sixty-five and sixty-eight degrees Fahrenheit. Third, and this is crucial, light exposure controls your sleep quality. Getting bright light in the morning and avoiding screens for at least an hour before bed isn't just good advice, it's biologically essential. Blue light suppresses melatonin production for up to three hours! Fourth, exercise is sleep's best friend, but timing is everything. Thirty minutes of moderate exercise improves deep sleep by up to forty percent, but do it at least four hours before bedtime. Exercise too late, and your elevated body temperature will prevent that crucial brain cooling. Fifth, alcohol might make you fall asleep faster, but it destroys your REM sleep, the stage where emotional memories are processed and creativity happens. Even one drink can reduce REM sleep by up to twenty percent! Here's something fascinating: people who sleep on their left side have better brain waste clearance than those who sleep on their back. The position literally affects how efficiently your glymphatic system works! And if you snore or have sleep apnea? You're not just keeping your partner awake. You're preventing your brain from entering the deep sleep stages where memory consolidation and brain cleaning happen. The bottom line? Sleep isn't just rest. It's active brain maintenance. Every night you shortchange your sleep, you're essentially skipping your brain's maintenance appointment. The research is clear: prioritizing seven to eight hours of quality sleep might be the single most powerful thing you can do for your brain health. Your future self will thank you, because a well-rested brain isn't just sharper today, it's protected for decades to come. Sweet dreams, and remember, your brain is counting on you to give it the sleep it desperately needs!
+3. PEXELS VIDEO SEARCH KEYWORDS
+brain scan, MRI machine, sleeping person, bedroom at night, alarm clock, sunrise window, person exercising, blue light from phone, scientist in lab, brain model, memory test, elderly person, meditation, deep breathing, sleep tracking device, pillow and mattress, dark bedroom, person yawning, coffee cup, healthy breakfast, yoga mat, research laboratory, medical chart, neurons animation, person reading book, moon and stars, sleep mask, white noise machine, person stretching morning, brain waves visualization
+4. YOUTUBE DESCRIPTION & HASHTAGS
+Description:
+Discover why scientists are calling sleep the #1 factor for brain health! This video reveals groundbreaking 2025 research on how your sleep directly impacts memory, prevents dementia, and literally cleans your brain. Learn the optimal sleep duration and 5 science-backed strategies to protect your brain tonight. Subscribe for more evidence-based health tips!
+Hashtags:
+#sleepscience #brainhealth #memoryimprovement #sleepdeprivation #healthysleep #neuroscience #alzheimersprevention #sleepquality #brainfunction #sleephygiene #scienceexplained #healthtips2025 #sleepresearch #cognitiveheath #wellnesstips
+
+
+
+"""
+
+Learning multiple languages doesn't just help you communicate, it transforms your brain and emotions.
+Research shows language learning enhances emotional intelligence and strengthens vital brain regions. Bilingual brains develop denser gray matter, stronger neural connections, and greater mental flexibility.
+While AI can translate words instantly, it can't experience the cognitive growth that happens when your brain adapts to new linguistic patterns.
+The true power of language learning isn't just in what you can say, but in how it rewires who you are, creating deeper connections that technology alone cannot match.
+
+
+Struggling to focus? Can't remember important details? Brain feeling foggy?
+The secret brain-boosting hack you need is right at your fingertips - it's doodling!
+Those little scribbles aren't just idle marks. Science shows doodling boosts your memory by a remarkable 29% by preventing your mind from wandering.
+When you doodle, you activate your brain's prefrontal cortex - your command center for focus and attention.
+It's not about creating art. Simple shapes, lines, or patterns are all you need. No skills required!
+Beyond boosting focus, doodling actually reduces stress by calming your amygdala and lowering cortisol levels.
+So next time you're in a meeting, lecture, or trying to remember something important - grab a pen and start doodling.
+Your brain will thank you for it. What do YOU usually doodle? Tell us in the comments!
+
+
+
+Why Hiccups Happen: Your Brain’s Broken Record!
+Ever wondered why hiccups strike out of nowhere? here’s how it works. Your diaphragm the muscle beneath your lungs suddenly spasms like a snapped rubber band. Milliseconds later, your vocal cords slam shut, trapping air and creating that infamous ‘hic’ sound. Common culprits? Eating too fast, gulping fizzy drinks, or even sudden excitement. But why do hiccups come in relentless waves? Researchers think your brain’s ‘hiccup center’ might get stuck in a loop, like a broken record repeating the same note. Even stranger? Babies hiccup in the womb, scientists believe it’s practice for breathing or an ancient reflex we never outgrew. Most quick fixes, like chugging water or holding your breath, work by jolting your vagus nerve to reset the misfiring circuit. Next time hiccups hijack your day, you’ll know the bizarre science behind that tiny, stubborn ‘hic.’ 
+eating, eating fast, drinking water, hiccups, hics, babies, girls, annoyed reaction
+
+
+Rewire Your Anxious Brain in Weeks 🧠
+
+Science confirms yoga slashes anxiety fast, your stress hormones drop in weeks, calming brain chemicals surge, memory zones physically grow thicker, inflammation fades, focus sharpens, breath sync breaks anxiety loops, vagus nerve activation triggers deep calm, regular practice rewires neural pathways like a dimmer switch for stress.
+
+#yogaforanxiety #mentalhealth #stressrelief #neuroscience  
+#vagusnerve #mindbodyhealing #anxietyrelief #yogatips  
+#brainhacks #sciencemadesimple #mentalwellness  
+#breathwork #inflammation #selfcare #healingjourney  
+
+
+yogaforanxiety, mentalhealth, stressrelief, neuroscience, mindbodyhealing, anxietyrelief, yogatips , brainhacks, healingjourne
+
+
+"Your Culture Controls Your Crush: Neuroscience Reveals Why! 🧠❤️🌎"
+
+Romantic attraction manifests differently across cultures, with neuroscience and sociology revealing fascinating patterns: while Western societies often emphasize individual traits like humor or appearance (with minor age preferences emerging in dating studies), East Asian cultures may prioritize familial approval and socioeconomic alignment, leading to larger accepted age gaps as status markers; collectivist societies like India or Nigeria frequently show stronger preferences for unambiguous partner backgrounds to maintain social harmony, whereas individualistic cultures like Australia or Canada tolerate greater ambiguity for self-discovery; though adrenaline-driven bonding (like rollercoasters) proves universally effective, culture shapes how we bond—Brazilian couples thrive on high-energy carnival dancing, while Korean research shows shared activities like cooking classes build deeper connections than passive thrills—proving our upbringing rewires how we experience chemistry at a neural level.
+
+intercultural couple laughing, traditional wedding fusion, age gap couple culture, multicultural date cooking, k-pop dance challenge duo, henna ceremony couple, kimono modern date, bollywood dance class, cultural festival adrenaline, family meeting diverse, tea ceremony romance, global love connection, cross-cultural eye contact, language barrier flirtation, fusion attire engagement
+
+#interculturaldating #crosscultural #globalattraction #cultureandlove  
+#relationshipadvice #datingacrosscultures #multiculturalcouple  
+#lovescience #culturaldifferences #modernromance #eastmeetswest  
+
+
+
+
+Become a "Positive Energizer": Science Says You’ll Boost Focus by 40%
+
+Feeling drained after talking to certain people? Science confirms 'energy vampires' hijack your brain, triggering stress hormones that sap motivation. But neuroscience reveals you can become a 'Positive Energizer'—someone proven to boost others' focus by 40% and deepen trust. Here’s how:
+1. PRAISE: Give specific praise ("Your idea saved us 3 hours!"), not generic compliments, it activates the brain’s reward circuit.
+2. SUPPORT: Offer non-judgmental help in crises. This releases bonding chemicals, increasing loyalty by 23%.
+3. CELEBRATE TINY WINS: Spotlighting progress rewires teams for resilience and spikes collaboration.
+Your positivity isn’t just ‘good vibes’, it’s a neuroscience-backed performance enhancer that biologically uplifts others. 
+
+
+
+positive team meeting energy vampire contrast supportive conversation friends celebrating win lightbulb moment workplace gratitude group high five couple appreciation mentorship positivity resilience building
+
+
+The Secret Neuroscience of People Who RADIATE Good Vibes 🧠🌟
+#positivevibes  #energyvampires   #neuroscienceofsuccess  #relationship  #teamdynamics  #leadershipskills #leadership  #positivepsychology  #emotionalwellness  #workplaceculture  #relationshipgoals
+
+
+Scientists revealed your eyes perform lightning-fast jumps called saccades 4 times EVERY second. It literally blinds you for 40 minutes daily!  When watching this video, your eyes aren't smoothly tracking; they’re making invisible leaps, proven by UC Berkeley eye-tracking tech. Leaving visual gaps where your brain hallucinates continuity using stored memories. That ‘stopped clock illusion’? Your first morning glance lasts longer because your brain fills the saccadic void with frozen images! Cambridge MRI scans show your visual cortex actively censors these jumps. Meaning reality is an edited film starring your imagination! Subscribe for more science based fact videos!
+eye blinking, eye closeup, eye tracking, jumpy eye movement closeup, saccade demonstration, reading eye fatigue, optical illusion, brain scan, blink transition effect
+
+
+
+
+⏱️ Fitness Made Simple: Science-Backed Rules in 5 Minutes
+
+Feeling lost in the world of health and fitness? One day you're told to run for an hour, the next to only eat meat! It's confusing, and honestly overwhelming. But stick around in just a minute, I will show you the science-backed simplicity hiding under all that noise! What if I told you the real science behind getting healthier is actually much simpler than you think? We're cutting through the confusion to give you foundational, proven answers about exercise and diet! Let's go!  How much should you exercise? Great news you don't need to live at the gym! The World Health Organization recommends 150-300 minutes of moderate cardio or 75-150 minutes of vigorous cardio weekly. Think brisk walking, cycling, or dancing! Break it up any way you like! For example you can do it thirty minutes five times a week.  Do Muscle strengthening activities twice weekly think weightlifting, body weight exercises, or resistance bands. Now, which is better: cardio or weights? The answer is both! Cardio boosts your engine strengthening your heart, improving circulation, and building stamina! Weights build your frame increasing muscle mass and strength while boosting metabolism! Fun science fact: every pound of muscle burns an extra six to seven calories daily at rest! When's the best time to exercise? Morning or night? Science says: whenever you'll do it consistently! Your body thrives on routine – consistency creates real results! Now let's talk food! It's easy to get pulled into restrictive fad diets. But science proves balance and inclusion win! Build your plate with: First, lean proteins like chicken, fish, eggs, and tofu  building blocks for muscle that keep you full! Next, complex carbs like oats, brown rice, and quinoa are your body's primary fuel! Then healthy fats like avocados, nuts, and olive oil are crucial for brain and hormone health! Finally, colorful fruits and vegetables packed with fiber, vitamins, minerals, and antioxidants! Remember the rule: fill half your plate with produce! Aim for balance, not perfection healthier choices most of the time! So here's your science-backed foundation: At least 150 minutes of cardio, two strength sessions, consistent scheduling, and balanced plates! Progress beats perfection! Start small, be kind to yourself, and build lifelong habits! If this helped, please like and subscribe!? Thanks for watching – see you next time!
+
+
+yoga, meditation, cardio, Brisk walking, dancing, belle dancing, Cycling outdoors, Dumbbell exercises, Push-ups, Morning workout, Gym ,Balanced plate meal, Colorful vegetables, food, vegetables, Lean protein, Grilled chicken healthy, Fish nutrition, Fitness confusion, Overwhelmed person, Healthy habits, Consistency calendar, Motivational progress, Food, balanced diet
+
+
+'''
