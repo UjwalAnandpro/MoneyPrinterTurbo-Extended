@@ -1,177 +1,164 @@
-# MoneyPrinterTurbo - Enhanced Fork
+# MoneyPrinterTurbo - Extended Edition 🚀
 
-This is an enhanced version of [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) with significant improvements to subtitle highlighting and TTS capabilities. Full credit goes to the original author and contributors.
+An enterprise-grade, fully automated AI short-video generation and publishing pipeline. This extended edition builds upon [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) by introducing automated daily production workflows, dual-language synthesis (Hindi & English), multi-account Google Drive cloud sync, real-time status monitoring, and copyright-free audio library management.
 
-## What's Different in This Fork
+---
 
-### Enhanced Subtitle System
-- **Word-by-word highlighting**: Each word lights up exactly when spoken, making videos more engaging
-- **Real-time synchronization**: Perfect timing with TTS word boundaries
-- **Multi-line support**: Works with wrapped text and complex subtitle layouts
-- **Customizable colors**: Configure highlight colors through the web interface
+## 🌟 Key New Features in This Extended Edition
 
-### Better Video-Text Matching
-- **Semantic search**: Analyzes script content to find relevant video clips instead of random selection
-- **Text similarity**: Matches video content to script meaning for better relevance
-- **Thumbnail analysis**: Optional video thumbnail similarity for sources like Pexels 
+### 1. 🤖 Fully Automated Daily Tech Video Pipeline (`daily_tech_video.py`)
+- **End-to-End Hands-Free Generation**: One command generates complete, publication-ready vertical shorts (9:16) with scriptwriting, voiceover, stock footage matching, animated subtitles, and background music.
+- **Dual-Language Support**:
+  - **Hindi Mode**: High-engagement Hinglish/Hindi tech script, natural Edge TTS / bilingual voice synthesis, and native Hindi subtitle rendering with [Nirmala.ttc](resource/fonts/Nirmala.ttc).
+  - **English Mode**: Global audience tech scripts with studio-quality English voice synthesis and dynamic font styling.
+- **Cinematic Pan & Zoom Effects**: Applies automatic Ken Burns (smooth zoom-in, zoom-out, pan) animations on all clips to boost viewer retention.
+- **Smart Fallback Material Matching**: Semantic keyword search across Pexels and Pixabay with automatic retry logic and fallback video matching.
 
-### Open-Source TTS with Voice Cloning
-This fork includes **Chatterbox TTS** - a completely free alternative to Azure TTS that runs locally on your machine.
+---
 
-**Key advantages:**
-- **No API costs**: Completely free to use, no rate limits
-- **Voice cloning**: Clone any voice using 10-60 seconds of reference audio
-- **Word-level timing**: Perfect subtitle synchronization with WhisperX integration
-- **Automatic speed control**: Configurable speech pacing via environment variables
+### 2. ☁️ Multi-Account Google Drive Cloud Integration (`app/services/gdrive.py`)
+- **Dual-Account / Dual-Channel Sync**: Automatically uploads generated videos to dedicated Google Drive folders based on language:
+  - English videos ➔ English Channel Drive Folder
+  - Hindi videos ➔ Hindi Channel Drive Folder
+- **Interactive OAuth Setup (`connect_gdrive.py` / `connect_gdrive.bat`)**: One-click authentication in your browser to link your Google accounts.
+- **Robust Resumable Uploads**: 2MB chunked uploads with automatic retry upon network hiccups and socket timeouts.
+- **Drive Status Verifier (`check_drive_status.py`)**: Quickly check authentication validity and folder mapping without starting a video build.
 
+---
 
+### 3. 📊 Real-Time Status Board & Monitoring (`status_board.html` & `status_monitor.py`)
+- **Live Visual Dashboard**: Modern, glassmorphism dark-mode web dashboard to monitor video rendering progress in real time.
+- **Granular Pipeline Tracking**:
+  - 📝 **Topic & Script Generation**
+  - 🎙️ **TTS Voice Synthesis**
+  - 🎬 **Video Material & Clip Gathering**
+  - 💬 **Dynamic Subtitle Synchronization**
+  - 🎞️ **Final Video Compositing & FX**
+  - ☁️ **Cloud Upload Status**
+- **One-Click Launch**: Double-click `view_status_board.bat` to open the live board.
 
-## Example Videos
+---
 
-See the enhanced features in action:
+### 4. 🎵 Curated Copyright-Free Audio Library
+- **Integrated YouTube Audio Library (`download_youtube_audio_library.py`)**: Curated copyright-free background scores tailored for high-paced tech content.
+- **Automatic Audio Mixing**: Background music automatically loops, ducks, and mixes at calibrated volume levels beneath spoken dialogue.
 
-**Full-Length Video Example**
+---
 
-[![MoneyPrinterTurbo Example Video](https://img.youtube.com/vi/yXc07ROgj80/maxresdefault.jpg)](https://www.youtube.com/watch?v=yXc07ROgj80)
+### 5. ⏱️ 24/7 Silent Background Scheduling
+- **`run_daily.bat`**: Full automation execution script.
+- **`run_daily_silent.vbs`**: Completely hidden VBS launcher designed for Windows Task Scheduler (runs without showing annoying command prompt windows).
 
-**YouTube Shorts Example**  
+---
 
-[![MoneyPrinterTurbo Shorts Example](https://img.youtube.com/vi/JBAuXpVHt40/maxresdefault.jpg)](https://www.youtube.com/shorts/JBAuXpVHt40)
-
-**Chatterbox TTS Generated Video**  
-
-[![MoneyPrinterTurbo Chatterbox Example](https://img.youtube.com/vi/ZAttF-cVce8/maxresdefault.jpg)](https://youtube.com/shorts/ZAttF-cVce8?feature=share)
-
-> **Features Showcased**: Natural voice synthesis • Word-level subtitle highlighting • Timing synchronization • Open-source TTS quality
-
-## 🖼️ Screenshots - Video Generation Setup
-
-For complete tranparency and some reprodceability, please see below settings used to generate videos shown above
-
-<div align="center">
-<img src="docs/ui_config_1.png" alt="Main Interface" width="800"/>
-
-<img src="docs/ui_config_2.png" alt="Voice Settings" width="800"/>
-</div>
-
-
-
-## Show Me The Prompt
-
-Here's the exact prompt system we use for generating engaging YouTube content:
-
-<details>
-<summary><strong>Complete Video Generation Prompt For LLMs of your choice(Click to expand)</strong></summary>
+## 🏗️ Architecture & Pipeline Flow
 
 ```
-ROLE: You are an expert YouTube scriptwriter and content strategist specializing in creating engaging, science-backed content for a broad audience.
-
-OBJECTIVE: Generate a complete text-based content package for a 5-minute YouTube video. The goal is to select a single, highly engaging topic and create all the necessary assets to produce the video, optimized for audience retention and YouTube's algorithm.
-
-TOPIC SELECTION CRITERIA:
-• Trending & Relevant: The topic must have high current interest and search volume
-• Broad Appeal: Relatable to a wide audience (productivity, health, personal finance, psychology)
-• Science-Based: Grounded in widely accepted, mainstream scientific consensus
-• Safe & Non-Controversial: Focus on foundational, actionable knowledge
-
-REQUIRED DELIVERABLES:
-
-1. Video Title Options (3x)
-   Goal: Create three distinct, clickable YouTube titles optimized for high CTR
-   Style Example: "Rewire Your Anxious Brain in 3 Simple Steps"
-
-2. Full Video Script
-   Length: 800-900 words (~5-minute speaking time)
-   Format: Single paragraph with proper punctuation for TTS optimization
-   Tone: Authoritative yet encouraging, digestible for general audience
-   TTS Optimization: End sentences with definitive punctuation for natural breaks
-
-3. Pexels Video Search Keywords
-   Structure: Keywords organized by script concepts for visual variety
-   Output: Single line separated by commas
-   Example: brain animation, neural network, person thinking, scrolling on phone
-
-4. YouTube Description & Hashtags
-   Description: SEO-optimized summary (2-3 lines) with clear call-to-action
-   Hashtags: 10-15 relevant hashtags for maximum discoverability
+[ Scheduled Trigger (run_daily_silent.vbs) ]
+                     │
+                     ▼
+         [ daily_tech_video.py ]
+                     │
+     ┌───────────────┴───────────────┐
+     ▼                               ▼
+[ English Pipeline ]          [ Hindi Pipeline ]
+  • Viral Prompt (LLM)          • Tech Viral Prompt (LLM)
+  • English Voice (TTS)         • Hindi Voice (Edge/Custom TTS)
+  • Pexels/Pixabay Media        • Pexels/Pixabay Media
+  • Pan/Zoom Compositing        • Nirmala.ttc Hindi Subtitles
+  • BG Music Mix                • BG Music Mix
+     │                               │
+     └───────────────┬───────────────┘
+                     ▼
+         [ Multi-Account Google Drive ]
+          ├─► English Channel Drive
+          └─► Hindi Channel Drive
+                     │
+                     ▼
+        [ Live Status Board Dashboard ]
 ```
-</details>
 
-##  Installation
+---
 
-**Quick Start (Recommended):**
+## 🚀 Quick Start Guide
+
+### 1. Installation
 
 ```bash
-# 1. Clone and setup
-git clone https://github.com/Asad-Ismail/MoneyPrinterTurbo-Extended.git
+# Clone this repository
+git clone https://github.com/UjwalAnandpro/MoneyPrinterTurbo-Extended.git
 cd MoneyPrinterTurbo-Extended
-conda env create -f environment.yml
-conda activate MoneyPrinterTurbo
 
-# 2. Install Chatterbox TTS (voice cloning)
-git clone https://github.com/resemble-ai/chatterbox.git
-cd chatterbox && pip install -e . && cd ..
+# Create and activate virtual environment
+python -m venv .venv
+.venv\Scripts\activate
 
-## For CUDA specific setup (if needed)
-source ./setup_cuda_env.sh    
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-**Usage:**
+### 2. Configuration Setup
+
+Copy the example configuration files and add your API keys:
+
 ```bash
-# Web Interface (Recommended)
-./webui.sh            
+# Copy main configuration
+copy config.example.toml config.toml
 
-## Optional: Customize speech speed when using chatter box
-export CHATTERBOX_CFG_WEIGHT=0.1  # Very slow
-export CHATTERBOX_CFG_WEIGHT=0.2  # Slow (default)
-export CHATTERBOX_CFG_WEIGHT=0.3  # Normal speed
+# Copy Google OAuth credentials template
+copy client_secrets.example.json client_secrets.json
 ```
 
-The web interface opens at `http://localhost:8501`
+Edit `config.toml` to specify your LLM (OpenAI, Gemini, Ollama, etc.) and stock footage API keys (Pexels, Pixabay).
 
-## 🔧 Troubleshooting
+---
 
-<details>
-<summary><strong>Common Issues & Solutions (Click to expand)</strong></summary>
+### 3. Google Drive Multi-Account Setup
 
-**Chatterbox TTS issues:**
-- **Garbled audio**: Text automatically preprocessed and chunked for clarity
-- **CUDA errors**: System automatically falls back to CPU mode
-- **Force CPU mode**: `export CHATTERBOX_DEVICE=cpu`
-- **Voice cloning problems**: Ensure audio is clear and single-speaker
-- **Speed control**: Use `CHATTERBOX_CFG_WEIGHT` environment variable
+Run the interactive setup helper:
 
-**CUDA/cuDNN compatibility issues:**
-- **Error**: `libcudnn_ops_infer.so.8: cannot open shared object file`
-- **Cause**: Missing cuDNN 8.x libraries required by some packages
-- **Solution**: Automatically handled by startup scripts (`setup_cuda_env.sh`)
-- **Manual fix**: `pip install nvidia-cudnn-cu12==8.9.2.26`
+```cmd
+connect_gdrive.bat
+```
+Follow the browser prompts to link your Google accounts for Hindi and English target folders.
 
-**MoviePy TextClip issues:**
-- **Error**: `got an unexpected keyword argument 'align'`
-- **Cause**: Newer MoviePy versions removed the `align` parameter
-- **Solution**: Remove or comment out `align` parameter in `TextClip` calls
+---
 
-**General issues:**
-- Check that all dependencies are installed correctly
-- Ensure your Python environment is activated
-- For GPU issues, CPU mode provides a reliable fallback
+### 4. Running the Pipelines
 
-**Advanced CUDA Setup:**
-The project includes automatic CUDA environment configuration:
-- `setup_cuda_env.sh` - Shared CUDA environment setup
-- `webui.sh` - Web interface with CUDA support
+#### Option A: Run Full Automated Daily Video Pipeline
+```cmd
+run_daily.bat
+```
+Or run directly via Python:
+```bash
+python daily_tech_video.py
+```
 
-If you encounter CUDA library issues, the startup scripts automatically:
-1. Add cuDNN library paths to `LD_LIBRARY_PATH` (Linux) 
-2. Set optimal CUDA memory allocation settings
+#### Option B: Launch Live Status Board
+```cmd
+view_status_board.bat
+```
 
-</details>
+#### Option C: Interactive Streamlit Web Interface
+```cmd
+webui.bat
+```
+Opens the visual studio interface at `http://localhost:8501`.
 
-## Contributions and Support 
+---
 
-If you found this project useful please give it a star and consider contributing to it or open an issue if you have an idea that can make it more useful.
+## 🔒 Security Best Practices
 
-## Original Project Credits
+This repository is configured with strict `.gitignore` rules to prevent credential leaks:
+- `client_secrets.json` and OAuth token files (`token*.json`) are never committed.
+- `config.toml` (containing private API keys) is kept local only.
+- Rendered video caches and task artifacts in `storage/` are excluded.
 
-This fork maintains full compatibility with the original MoneyPrinterTurbo while adding new features. Check out the [original repository](https://github.com/harry0703/MoneyPrinterTurbo) for the base project documentation and additional features.
+---
+
+## 📜 Credits & License
+
+- Based on the open-source [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) project.
+- Enhanced with automated daily tech production, bilingual TTS/subtitles, live dashboarding, and multi-account Google Drive sync by **Ujwal Anand**.
+- Released under the [MIT License](LICENSE).
